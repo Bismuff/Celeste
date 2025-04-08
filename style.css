@@ -316,6 +316,10 @@ b{
 .desc.summit.gameplay article.summit.gameplay, .desc.summit.gameplay article.summit.gameplay>p, .desc.summit.gameplay article.summit.gameplay>h2{ display: block;}
 
 
+.desc.prologue >.infobox{
+  display: none;
+}
+
 .desc:not(.prologue) .infobox{
   display: flex;
   width: 100%;
@@ -420,7 +424,7 @@ b{
     width: 100vw;
     height: 100vh;
     background-color: navy;
-    background-image: url(bilder/BackgroundRepeatMobile.png) ;
+    background-image: url(bilder/mobilebg.png) ;
     position: relative;
   } 
 
@@ -459,8 +463,8 @@ b{
   .mobileContentBox{
     display: grid;
     max-height: 100vh;
-    max-width: 99vw;
-    margin-left: 1vw;
+    width: 100vw;
+    margin-left: 3vw;
     overflow-y: scroll;
     gap: 10px;
     transition: all 0.5s ease-in-out;
