@@ -177,14 +177,14 @@ grid-template-rows: repeat(40, 1fr);
   animation: popOutBanner 0.2s forwards !important;
 }
 
-.banner.prologueSelector{background: no-repeat center/100% url(bilder/BannerPrologue.png) ;}
-.banner.forsakenSelector{background: no-repeat center/100% url(bilder/BannerForsaken.png) ;}
-.banner.oldsiteSelector{background: no-repeat center/100% url(bilder/BannerOldsite.png) ;}
-.banner.celestialSelector{background: no-repeat center/100% url(bilder/BannerCelestial.png) ;}
-.banner.goldenSelector{background: no-repeat center/100% url(bilder/BannerGolden.png) ;}
-.banner.mirrorSelector{background: no-repeat center/100% url(bilder/BannerMirror.png) ;}
-.banner.reflectionSelector{background: no-repeat center/100% url(bilder/BannerReflection.png) ;}
-.banner.summitSelector{background: no-repeat center/100% url(bilder/BannerSummit.png) ;}
+.banner.prologueSelector{background: no-repeat center/100% url(Bilder/BannerPrologue.png) ;}
+.banner.forsakenSelector{background: no-repeat center/100% url(Bilder/BannerForsaken.png) ;}
+.banner.oldsiteSelector{background: no-repeat center/100% url(Bilder/BannerOldsite.png) ;}
+.banner.celestialSelector{background: no-repeat center/100% url(Bilder/BannerCelestial.png) ;}
+.banner.goldenSelector{background: no-repeat center/100% url(Bilder/BannerGolden.png) ;}
+.banner.mirrorSelector{background: no-repeat center/100% url(Bilder/BannerMirror.png) ;}
+.banner.reflectionSelector{background: no-repeat center/100% url(Bilder/BannerReflection.png) ;}
+.banner.summitSelector{background: no-repeat center/100% url(Bilder/BannerSummit.png) ;}
 
 
 @keyframes slideIn{
