@@ -1,0 +1,540 @@
+@font-face {
+  font-family: "Celeste";
+  src: url(Renogare/Renogare-Regular.otf);
+}
+
+p, h2, article, .story, .gameplay, .previous-btn, .next-btn, .story-btn, .gameplay-btn, .strawberry, .titleMobile, .MCrystal-Heart, .Mstrawberry, .mobileDesc, .mobile{
+  display: none;
+  font-family: "Celeste";
+  font-size: 1rem;
+  line-height: 140%;
+  color: #000000b7;
+}
+
+
+body{
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+
+
+.imageholder{
+  position: relative;
+  z-index: 0;
+  margin: auto;
+  display: grid;
+  grid-template-areas: 
+
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . summit . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . mirror . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . celestial . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . golden . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . oldsite . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . forsaken . . . . . . . . . . . . . . . . . . prologue . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . reflection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ."
+;
+grid-template-columns: repeat(60, 1fr); 
+grid-template-rows: repeat(40, 1fr); 
+}
+
+.mountain{
+  grid-area: 1 / 1 / 41 / 61 ;
+  z-index: 1;
+}
+
+
+.grid-item{
+  position: absolute;
+  display: flex;
+  z-index: 3;
+  min-width: 0;
+  min-height: 0;
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+}
+
+.grid-item > img {
+  max-width: 100%;
+  opacity: 50%;
+  flex: 1 1 100%;
+}
+.grid-item > img:hover{opacity: 1;}
+
+.ch1 { grid-area: prologue; }
+.ch2 { grid-area: forsaken; }
+.ch3 { grid-area: oldsite; }
+.ch4 { grid-area: celestial; }
+.ch5 { grid-area: golden; }
+.ch6 { grid-area: mirror; }
+.ch7 { grid-area: reflection; }
+.ch8 { grid-area: summit; }
+
+
+/*Banners*/
+@keyframes popInBanner {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-15%);
+  }
+}
+@keyframes slideInBanner {
+  from { 
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to { 
+    transform: translateX(-15%);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOutBanner {
+  from { 
+    transform: translateX(-15%);
+    opacity: 1;
+  }
+  to { 
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes popOutBanner {
+  from {
+    transform: translateX(-15%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+
+.bannerholder{
+  display: flex;
+  height: 100%;
+  width: 10vw;
+  flex-direction: column-reverse;
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-40%);
+  z-index: 2;
+}
+
+
+.banner.show {animation: slideInBanner 0.2s forwards;}
+.banner.hide {animation: slideOutBanner 0.2s forwards;}
+
+.banner{
+  flex: 0 1 12.5%;
+  max-height: 15vh;
+  width: 100%;
+  animation: popInBanner 0.2s forwards;
+}
+
+.banner:hover{
+  animation: popOutBanner 0.2s forwards !important;
+}
+
+.banner.prologueSelector{background: no-repeat center/100% url(bilder/BannerPrologue.png) ;}
+.banner.forsakenSelector{background: no-repeat center/100% url(bilder/BannerForsaken.png) ;}
+.banner.oldsiteSelector{background: no-repeat center/100% url(bilder/BannerOldsite.png) ;}
+.banner.celestialSelector{background: no-repeat center/100% url(bilder/BannerCelestial.png) ;}
+.banner.goldenSelector{background: no-repeat center/100% url(bilder/BannerGolden.png) ;}
+.banner.mirrorSelector{background: no-repeat center/100% url(bilder/BannerMirror.png) ;}
+.banner.reflectionSelector{background: no-repeat center/100% url(bilder/BannerReflection.png) ;}
+.banner.summitSelector{background: no-repeat center/100% url(bilder/BannerSummit.png) ;}
+
+
+@keyframes slideIn{
+  from { 
+    right: -100%;
+    opacity: 0;
+  }
+  to { 
+    right: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from { 
+    right: 0;
+    opacity: 1;
+  }
+  to { 
+    right: -100%;
+    opacity: 0;
+  }
+}
+
+.desc{
+  width: 50%;
+  height: 100%;
+  max-height: 100vh;
+  z-index: 4;
+  position: fixed;
+  right: -100%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  display: grid;
+  grid-template-areas:
+  
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . text text text text text text text text text text text text text text text text ."
+  ". . . text text text text text text text text text text text text text text text text ."
+  ". . . text text text text text text text text text text text text text text text text ."
+  ". . . text text text text text text text text text text text text text text text text ."
+  ". . . text text text text text text text text text text text text text text text text ."
+  ". . . text text text text text text text text text text text text text text text text ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ". . info info info info info info info info info info info . . buttonspace buttonspace buttonspace buttonspace ."
+  ". . info info info info info info info info info info info . . buttonspace buttonspace buttonspace buttonspace ."
+  ". . info info info info info info info info info info info . . buttonspace buttonspace buttonspace buttonspace ."
+  ". . . . . . . story story story . gameplay gameplay gameplay . . . . . ."
+  ". . . . . . . story story story . gameplay gameplay gameplay . . . . . ."
+  ". . . . . . . story story story . gameplay gameplay gameplay . . . . . ."
+  ". . . . . . . story story story . gameplay gameplay gameplay . . . . . ."
+  ". . . . . . . story story story . gameplay gameplay gameplay . . . . . ."
+  ". . . . . . . story story story . gameplay gameplay gameplay . . . . . ."
+  ". . . . . . . . . . . . . . . . . . . ."
+  ;
+  grid-template-columns: repeat(20, 1fr);
+  grid-template-rows: repeat(30, 1fr); 
+}
+
+.desc.show {animation: slideIn 0.5s forwards; right: 0; opacity: 1;}
+.desc.hide {animation: slideOut 0.5s forwards; right: -100%; opacity: 0;}
+
+
+.desc.prologue {background: no-repeat center/100% url(Bilder/prolouge.png);}
+.desc.forsaken.story {background: no-repeat center/100% url(Bilder/forsakencity.png);}
+.desc.oldsite.story {background: no-repeat center/100% url(Bilder/oldsite.png);}
+.desc.celestial.story {background: no-repeat center/100% url(Bilder/Celestialresort.png);}
+.desc.golden.story {background: no-repeat center/100% url(Bilder/Goldenridge.png);}
+.desc.mirror.story {background: no-repeat center/100% url(Bilder/Mirrortemple.png);}
+.desc.reflection.story {background: no-repeat center/100% url(Bilder/reflection.png);}
+.desc.summit.story {background: no-repeat center/100% url(Bilder/thesummit.png);}
+
+.desc.forsaken.gameplay {background: no-repeat center/100% url(Bilder/forsakencityG.png);}
+.desc.oldsite.gameplay {background: no-repeat center/100% url(Bilder/oldsiteG.png);}
+.desc.celestial.gameplay {background: no-repeat center/100% url(Bilder/CelestialresortG.png);}
+.desc.golden.gameplay {background: no-repeat center/100% url(Bilder/GoldenridgeG.png);}
+.desc.mirror.gameplay {background: no-repeat center/100% url(Bilder/MirrortempleG.png);}
+.desc.reflection.gameplay {background: no-repeat center/100% url(Bilder/reflectionG.png);}
+.desc.summit.gameplay {background: no-repeat center/100% url(Bilder/thesummitG.png);}
+
+
+.textbox{
+  display: block;
+  grid-area: text;
+  overflow-y: scroll;
+}
+
+h2{
+  font-size: 1.3rem;
+  color: black;
+}
+
+.hidden{
+  background-color: black;
+}
+.hidden:hover{
+  background-color: #00000020;
+}
+
+b{
+  color: black;
+}
+
+.desc.prologue article.prologue, .desc.prologue article.prologue>p, .desc.prologue article.prologue>h2{ display: block;}
+.desc.forsaken.story article.forsaken.story, .desc.forsaken.story article.forsaken.story>p, .desc.forsaken.story article.forsaken.story>h2{ display: block;}
+.desc.forsaken.gameplay article.forsaken.gameplay, .desc.forsaken.gameplay article.forsaken.gameplay>p, .desc.forsaken.gameplay article.forsaken.gameplay>h2{ display: block;}
+.desc.oldsite.story article.oldsite.story, .desc.oldsite.story article.oldsite.story>p, .desc.oldsite.story article.oldsite.story>h2{ display: block;}
+.desc.oldsite.gameplay article.oldsite.gameplay, .desc.oldsite.gameplay article.oldsite.gameplay>p, .desc.oldsite.gameplay article.oldsite.gameplay>h2{ display: block;}
+.desc.celestial.story article.celestial.story, .desc.celestial.story article.celestial.story>p, .desc.celestial.story article.celestial.story>h2{ display: block;}
+.desc.celestial.gameplay article.celestial.gameplay, .desc.celestial.gameplay article.celestial.gameplay>p, .desc.celestial.gameplay article.celestial.gameplay>h2{ display: block;}
+.desc.golden.story article.golden.story, .desc.golden.story article.golden.story>p, .desc.golden.story article.golden.story>h2{ display: block;}
+.desc.golden.gameplay article.golden.gameplay, .desc.golden.gameplay article.golden.gameplay>p, .desc.golden.gameplay article.golden.gameplay>h2{ display: block;}
+.desc.mirror.story article.mirror.story, .desc.mirror.story article.mirror.story>p, .desc.mirror.story article.mirror.story>h2{ display: block;}
+.desc.mirror.gameplay article.mirror.gameplay, .desc.mirror.gameplay article.mirror.gameplay>p, .desc.mirror.gameplay article.mirror.gameplay>h2{ display: block;}
+.desc.reflection.story article.reflection.story, .desc.reflection.story article.reflection.story>p, .desc.reflection.story article.reflection.story>h2{ display: block;}
+.desc.reflection.gameplay article.reflection.gameplay, .desc.reflection.gameplay article.reflection.gameplay>p, .desc.reflection.gameplay article.reflection.gameplay>h2{ display: block;}
+.desc.summit.story article.summit.story, .desc.summit.story article.summit.story>p, .desc.summit.story article.summit.story>h2{ display: block;}
+.desc.summit.gameplay article.summit.gameplay, .desc.summit.gameplay article.summit.gameplay>p, .desc.summit.gameplay article.summit.gameplay>h2{ display: block;}
+
+
+.desc:not(.prologue) .infobox{
+  display: flex;
+  width: 100%;
+  grid-area: info;
+  flex-direction: row;
+  align-items: center;
+}
+
+.desc.show>.infobox>article{
+  flex: 1 1 100%;
+  max-width: 25%;
+  font-size: 200%;
+  max-height: 75%;
+}
+
+.desc.show:not(.prologue)>.infobox>img{
+  display: block;
+  max-width: 25%;
+  max-height: 75%;
+  margin: auto;
+}
+
+.buttonholder{
+  display: flex;
+  grid-area: buttonspace;
+  flex-direction: row;
+}
+
+.close-btn{
+  display: block;
+  background: no-repeat center/100% url(Bilder/Xbtn.png);
+  border: none;
+  flex: 0 0 33%;
+  padding: 1%;
+  margin: 2%;
+}
+.close-btn:hover{ background: no-repeat center/100% url(Bilder/XbtnH.png) !important;}
+
+.desc:not(.prologue)>.buttonholder>.previous-btn{
+  display: block;
+  border: none;
+  background: no-repeat center/100% url(Bilder/prev_arrow.png);
+  flex: 0 0 33%;
+  padding: 1%;
+  margin: 2%;
+}
+.previous-btn:hover{ background: no-repeat center/100% url(Bilder/prev_arrowH.png) !important;}
+
+.desc:not(.summit)>.buttonholder>.next-btn{
+  display: block;
+  border: none;
+  background: no-repeat center/100% url(Bilder/next_arrow.png);
+  flex: 0 0 33%;
+  padding: 1%;
+  margin: 2%;
+}
+.next-btn:hover{ background: no-repeat center/100% url(Bilder/next_arrowH.png) !important;}
+
+.desc:not(.prologue, .story)>.story-btn{
+  display: block;
+  background: none;
+  border: none;
+  grid-area: story;
+}
+
+.desc:not(.prologue, .gameplay)>.gameplay-btn{
+  display: block;
+  background: none;
+  border: none;
+  grid-area: gameplay;
+}
+
+@media (max-width: 850px) {
+
+  p, h2, article, .grid-item, .mountain, .imageholder, .bannerholder, .story, .gameplay, .previous-btn, .next-btn, .story-btn, .gameplay-btn, .strawberry, .Crystal-Heart{
+    display: none;
+    font-family: "Celeste";
+    font-size: 1rem;
+    line-height: 140%;
+    color: #ffffffb7;
+  }
+
+  h2{
+    font-size: 1.4rem;
+    color: #ffffff;
+  }
+  
+  .hidden{
+    color: black;
+    background-color: black;
+  }
+  
+  b{
+    color: #ffffff;
+  }
+
+
+  .mobileBody{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: navy;
+    background-image: url(bilder/BackgroundRepeatMobile.png) ;
+    position: relative;
+  } 
+
+  .titleMobile{
+    display: block;
+  }
+
+  .titleMobile>img{
+    display: block;
+    max-width: 100vw;
+    padding-bottom: 1vh;
+  }
+  
+  @keyframes slideOutRight {
+    from {
+      transform: translateX(0);
+      opacity: 1;
+    }
+    to {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0%);
+      opacity: 1;
+    }
+  }
+
+  .mobileContentBox{
+    display: grid;
+    max-height: 100vh;
+    max-width: 99vw;
+    margin-left: 1vw;
+    overflow-y: scroll;
+    gap: 10px;
+    transition: all 0.5s ease-in-out;
+    position: relative;
+    grid-template-areas: 
+    "active"
+    "1"
+    "2"
+    "3"
+    "4"
+    "5"
+    "6"
+    "7"
+    "8"
+    ;
+  }
+
+  .mobileDesc {
+    display: flex;
+    max-width: 97vw;
+    flex-direction: column;
+    padding: 1vw;
+    animation: slideInRight 0.2s forwards;
+    transition: transform 0.5s ease-in-out, transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
+  }
+
+  .mobileDesc.active{
+    z-index: 99;
+    grid-area: active;
+    background-color: rgba(0, 0, 0, 0.438);
+    border-radius: 30px;
+    height: auto;
+  }
+
+  .mobileDesc > article p, .mobileDesc > article h2{
+    opacity: 0;
+    text-align: center;
+    display: block;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease-in-out 0.5s, transform 0.3s ease-in-out 0.5s; 
+  }
+
+  .mobileDesc.active > article p, .mobileDesc.active > article h2, .mobileDesc.active > article{
+    opacity: 1;
+    text-align: center;
+    display: block;
+    transform: translateY(0);
+    padding: 1vw;
+  }
+
+  
+  .mobileDesc.hide {
+    animation: slideOutRight 0.2s forwards;
+  }
+
+  .hidden.reveal {
+    background-color: #00000020;
+    color: #ffffffb7;
+  }
+
+  .revealB{
+    background: rgba(0, 0, 128, 0.445)  no-repeat center/80% url(Bilder/revealBtn.png);
+    width: 20vw;
+    height: 8vw;
+    border: none;
+    padding: 2vw ;
+    box-shadow: 2px 2px 2px rgba(0, 0, 255, 0.24);
+    border-radius: 5px;
+  }
+
+  .revealB.pressed{
+    background: rgba(27, 55, 146, 0.459) no-repeat center/80% url(Bilder/hideBtn.png);
+  }
+
+
+
+}
