@@ -424,12 +424,13 @@ b{
     width: 100vw;
     height: 100vh;
     background-color: navy;
-    background-image: url(Bilder/mobilebg.png) ;
+    background-image: url(bilder/mobilebg.png) ;
     position: relative;
   } 
 
   .titleMobile{
     display: block;
+    height: 13vh;
   }
 
   .titleMobile>img{
@@ -462,7 +463,7 @@ b{
 
   .mobileContentBox{
     display: grid;
-    max-height: 100vh;
+    height: 79vh;
     width: 97vw;
     margin-left: 3vw;
     overflow-y: scroll;
@@ -492,18 +493,17 @@ b{
 
   .mobileDesc.active{
     z-index: 99;
-    grid-area: active;
     background-color: rgba(0, 0, 0, 0.438);
     border-radius: 30px;
     height: auto;
   }
 
   .mobileDesc > article p, .mobileDesc > article h2{
-    opacity: 0;
     text-align: center;
     display: block;
     transform: translateY(10px);
     transition: opacity 0.3s ease-in-out 0.5s, transform 0.3s ease-in-out 0.5s; 
+    animation: slodeOutRight 0.2s forwards;
   }
 
   .mobileDesc.active > article p, .mobileDesc.active > article h2, .mobileDesc.active > article{
@@ -512,6 +512,7 @@ b{
     display: block;
     transform: translateY(0);
     padding: 1vw;
+    animation: slideInRight 0.2s forwards;
   }
 
   
@@ -525,19 +526,58 @@ b{
   }
 
   .revealB{
-    background: rgba(0, 0, 128, 0.445)  no-repeat center/80% url(Bilder/revealBtn.png);
+    background: #004d80  no-repeat center/80% url(Bilder/revealBtn.png);
     width: 20vw;
     height: 8vw;
     border: none;
     padding: 2vw ;
-    box-shadow: 2px 2px 2px rgba(0, 0, 255, 0.24);
+    box-shadow: 4px 4px 4px #00000080;
     border-radius: 5px;
   }
 
   .revealB.pressed{
     background: rgba(27, 55, 146, 0.459) no-repeat center/80% url(Bilder/hideBtn.png);
+    box-shadow: inset 4px 4px 4px;
   }
 
+
+  footer.mobile{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    height: 8vh;
+    background: black no-repeat top/100% url(Bilder/mobileFooter.png);
+  }
+
+  .mobileInfobox{
+    display: flex;
+    justify-content: space-evenly;
+    height: 70%;
+  }
+
+  .Mstrawberry, .MCrystal-Heart{
+    display: block;
+    height: 100%;
+  }
+
+  footer article{
+    color: #040014cc;
+    height: 100%;
+    font-size: 4vh;
+    margin-left: 1rem;
+  }
+
+  footer:not(.forsaken, .oldsite, .celestial, .golden, .mirror, .reflection, .summit) article.prologue{ display: block;}
+  footer.forsaken article.forsaken{ display: block;}
+  footer.oldsite article.oldsite{ display: block;}
+  footer.celestial article.celestial{ display: block;}
+  footer.golden article.golden{ display: block;}
+  footer.mirror article.mirror{ display: block;}
+  footer.reflection article.reflection{ display: block;}
+  footer.summit article.summit{ display: block;}
 
 
 }

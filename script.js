@@ -190,18 +190,22 @@ document.addEventListener("DOMContentLoaded", function (){
   const imgClose = document.querySelectorAll(".imgCloseMobile")
   const revealB = document.querySelectorAll(".revealB")
   const hiddenText = document.querySelectorAll(".hidden")
+  const footer = document.querySelector(".footerM")
 
 
   imgClose.forEach(img => {
     img.addEventListener("click", function () {
       let parentBanner = img.parentElement
+      let clickedIndex = Array.from(banners).indexOf(parentBanner);
 
       if (parentBanner.classList.contains("active")){
-
-        banners.forEach(b => {
-          b.classList.remove("active");
-          b.classList.add("hide");
-          setTimeout(() => b.classList.remove("hide"), 150); // Reset after animation
+        parentBanner.classList.remove("active");
+        banners.forEach((b, index)=> {
+          if (index> clickedIndex) {
+            b.classList.remove("active");
+            b.classList.add("hide");
+            setTimeout(() => b.classList.remove("hide"), 150);
+         } // Reset after animation
         });
 
         revealB.forEach(button=>{
@@ -210,18 +214,25 @@ document.addEventListener("DOMContentLoaded", function (){
         hiddenText.forEach(element =>{
           element.classList.remove("reveal");
         });
+        footer.classList.remove("prologue", "forsaken", "oldsite", "celestial", "golden", "mirror", "reflection", "summit");
 
       } else {
 
-        banners.forEach(b => {
+        const styleClass = img.getAttribute("data-style")
+
+        banners.forEach((b, index) => {
           b.classList.remove("active");
-          b.classList.add("hide");
-          setTimeout(() => b.classList.remove("hide"), 150); // Reset after animation
+          if (index> clickedIndex) {
+            b.classList.add("hide");
+            setTimeout(() => b.classList.remove("hide"), 150); // Reset after animation
+          }
         });
 
+        footer.classList.remove("prologue", "forsaken", "oldsite", "celestial", "golden", "mirror", "reflection", "summit");
+        footer.classList.add(styleClass)
 
         parentBanner.classList.remove("hide");
-
+        
         setTimeout(() =>  parentBanner.classList.add("active"), 200)
 
       }
