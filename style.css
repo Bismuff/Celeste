@@ -407,7 +407,7 @@ b{
     color: #ffffff;
   }
   
-  .hidden{
+  .hidden, .hidden:hover{
     color: black;
     background-color: black;
   }
@@ -520,7 +520,7 @@ b{
     animation: slideOutRight 0.2s forwards;
   }
 
-  .hidden.reveal {
+  .hidden.reveal{
     background-color: #00000020;
     color: #ffffffb7;
   }
